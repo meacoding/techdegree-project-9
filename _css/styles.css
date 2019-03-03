@@ -290,10 +290,10 @@ section:nth-child(7) {
     margin: 0 15px 30px 15px;
 }
 .showhide img {
-    min-height: 190px;
+    /* min-height: 190px;
     max-height: 350px;
-    min-width: 300px;
-    max-width: 40%;
+    min-width: 300px; */
+    max-width: 75%;
     margin: 0 15px 30px 15px;
 }
 img#showhideException {
