@@ -1,0 +1,499 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Sheet is organized by section elements, which are numbered. Basic codes such as fonts, colors and secton heights are grouped together separately at the top of the sheet. Code for the LEGO-like blocks are situated at the bottom of the sheet as the code is long.*/
+
+
+/*----------The Basics----------*/
+html {
+    font-family: 'Raleway', sans-serif;
+}
+body {
+    margin: 0 auto;
+}
+h1 {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 5em;
+    line-height: 1;
+    margin: 0; 
+    padding: 0 20px;
+}
+@media (max-width: 400px) {
+    h1 {
+        font-size: 4em;
+    }
+}
+p {
+    font-size: 1.2em;
+}
+section:nth-child(1) {
+    background: #91ba41;
+    background: url('../_images/randomized-pattern.svg');
+    background-size: 1500px auto;
+    max-height: 675px;
+    height: 100vh;
+    width: 100%;
+}
+section:nth-child(2) {
+    background: #FFFFFF;
+    height: 100%;
+    width: 100%;
+}
+section:nth-child(3) {
+    background: #FFFFFF;
+    max-height: 100%;
+    width: 100%;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+section:nth-child(4) {
+    background: #101010;
+    max-height: 100%;
+    width: 100%;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+section:nth-child(5) {
+    background: #FFFFFF;
+    height: 100%;
+    width: 100%;
+}
+section:nth-child(6) {
+    background: #101010;
+    height: 100%;
+    width: 100%;
+}
+section:nth-child(7) {
+    background: url('../_images/randomized-pattern.svg');
+    background-size: 1500px auto;
+/*    background: #91ba41;*/
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 30px;
+}
+@media (max-height: 700px) {
+    section:nth-child(7) {
+        padding-bottom: 20px;
+    }
+}
+/*----------End The Basics----------*/
+
+
+/*----------One, Landing----------*/
+.wrapper {
+    position: relative; 
+    display: block;
+}
+#one { 
+    position: relative; 
+    transform: translateY(-50%);
+    top: 40%;
+}
+#one h1, #one > p, #five {
+    text-align: center;
+}
+#one h1 {
+    color: white;
+    font-size: 6em;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+#one p {
+    color: #101010;
+    font-size: 1.7em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0 20px;
+}
+.arrow {
+    margin: 0 auto;
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    right: 0;
+    left: 0;
+    top: 0%;
+}
+.arrow > div {
+    position: absolute;
+}
+.arrow > div.arrow1, 
+.arrow > div.arrow2, 
+.arrow > div.arrow3, 
+.arrow > div.arrow4 {
+    width: 50px;
+}
+.arrow1 {
+    bottom: 30%;
+    opacity: 0;
+}
+.arrow2 {
+    bottom: 20%;
+    opacity: 0;
+}
+.arrow3 {
+    bottom: 10%;
+    opacity: 0;
+}
+.arrow4 {
+    bottom: 0%;
+    opacity: 0;
+}
+@media (min-width: 850px) {
+    #one h1 {
+        font-size: 8em;
+    }
+    #one p {
+        font-size: 1.9em;
+    }
+}
+@media (max-height: 600px) {
+    .arrow1 {
+    bottom: 21%;
+    }
+    .arrow2 {
+        bottom: 14%;
+    }
+    .arrow3 {
+        bottom: 7%;
+    }
+    .arrow4 {
+        bottom: 0%;
+    }
+}
+/*----------End One, Landing----------*/
+
+
+/*----------Two/Three, Greeting----------*/
+#two {
+    height: 100%;
+    padding-top: 50px;
+    text-align: center;
+}
+#two h1 {
+    display: block;
+}
+#three {
+    padding: 50px 0;
+    text-align: center;
+}
+#three img {
+    display: inline-block;
+    width: 200px;
+    box-shadow: 10px 10px #262626;
+    margin: 0 0 0 20px;
+}
+#three p {
+    display: inline-block;
+    max-width: 300px;
+    margin: 0 20px 0 50px;
+    line-height: 1.75;
+    text-align: right;
+}
+@media (max-width: 620px) {
+    #three p {
+        display: block;
+        margin: 0 20px;
+        text-align: center;
+    }
+    #three img {
+        margin:  0 0 50px 0;
+    }
+}
+/*----------End Two/Three, Greeting----------*/
+
+
+/*----------Four, Blocks----------*/
+#four {
+    padding-top: 50px;
+    text-align: center;
+}
+#four h1 {
+    color: white;
+    margin:  0 20px 50px;
+    text-align: center;
+}
+#four .block {
+    display: inline-block;
+    width: 150px;
+    padding: 0 20px 50px;
+}
+.legoBottom .white {
+    color: #101010;
+}
+@media (max-width: 620px) {
+    #four img {
+        margin: 0 20px;
+    }
+}
+/*----------End Four, Blocks----------*/
+
+
+/*----------Five, Projects----------*/
+#five {
+    height: 100%;
+    padding: 50px 0;
+}
+#five a > div, #ref3, #ref4 {
+    margin: 25px 20px 15px 20px;
+    width: 210px;
+    height: 350px;
+}
+#five h1 {
+    margin: 0 0 20px 0;
+}
+.ref {
+    display: inline-block;
+    width: 210px;
+    height: 350px;
+}
+.ref p {
+    color: white;
+    top: 50%;
+    position: relative;
+    margin: 0;
+    padding: 10px 0;
+    background: #101010;
+    transform: translateY(-50%);
+}
+/*Don't consolidate background-size for #ref. Breaks images.*/
+#ref1 {
+    background: linear-gradient(rgba(96, 196, 254, .5), rgba(96, 196, 254, .5)),  url("../_images/thumb_uw.JPG");
+    background-size: 210px 350px;
+}
+#ref2 {
+    background: linear-gradient(rgba(145, 186, 65, 0.5), rgba(145, 186, 65, .5)),  url("../_images/thumb_di.JPG");
+    background-size: 210px 350px;
+}
+#ref3 {
+    background: linear-gradient(rgba(156, 156, 156, .5), rgba(156, 156, 156, .5)),  url("../_images/thumb_at.jpg");
+    background-size: 210px 350px;
+    cursor: pointer;
+}
+#ref4 {
+    background: linear-gradient(rgba(249, 190, 53, 0.5), rgba(249, 190, 53, .5)),  url("../_images/thumb_lego.jpg");
+    background-size: 210px 350px;
+    cursor: pointer;
+}
+.showhide {
+    text-align: center;
+    height: 100%;
+    padding:50px 0;
+    background: #eee;
+    display: none;
+}
+.showhide h1 {
+    padding-bottom: 15px;
+    margin: 0 15px 30px 15px;
+}
+.showhide img {
+    min-height: 190px;
+    max-height: 350px;
+    min-width: 300px;
+    max-width: 40%;
+    margin: 0 15px 30px 15px;
+}
+img#showhideException {
+    min-height: 1px;
+}
+.showhide p {
+    width: 80%;
+    margin: 0 auto 30px;
+    line-height: 1.75;
+}
+.showhide div {
+    display: inline-block;
+    font-size: 35px;
+    color: white;
+    border-radius: 50% 50%;
+    border: solid 2px #101010;
+    height: 50px;
+    width: 50px;
+    background: #101010;
+    user-select: none;
+}
+.showhide div:hover, .showhide div:active {
+    color: #101010;
+    background: transparent;
+    user-select: none;
+}
+.close {
+    cursor: pointer;
+    border: none;
+}
+.fontAwesome {
+    font-size: 50px;
+    color: #48c7ff;
+}
+/*----------End Five, Projects----------*/
+
+
+/*----------Six, Hire Me----------*/
+#six {
+    padding: 50px 20px;
+    text-align: center;
+}
+#six h1 {
+    color: white;
+    margin-bottom: 40px;
+}
+#six p {
+    display: block; /*makes text a block box, allowing img to be inline and centered*/
+    color: white;
+    max-width: 350px;
+    line-height: 1.75;
+    margin: 0 auto 50px;
+}
+#six img {
+    width: 80%;
+    max-width: 350px;
+}
+/*----------End Six, Hire Me----------*/
+
+
+/*----------Seven, Video----------*/
+#seven {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    text-align: center;
+}
+#seven h1 {
+    color: #fff;
+    margin-bottom: 40px;
+}
+#youtube {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+#youtube iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+/*----------End Seven, Video----------*/
+
+
+/*----------Eight, Contact----------*/
+#eight h1 a {
+    text-decoration: none;
+    color: #101010;
+    text-align: center;
+    transition: all .5s;
+}
+#eight .size {
+    font-size: 3rem;
+    color: #101010;
+    padding: 0 10px 10px;
+}
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
+@media (max-width: 500px) {
+    #eight h1 a {
+        font-size: 2rem;
+    }
+}
+/*----------End Eight, Contact----------*/
+
+
+/*----------The Blocks----------*/
+.green {
+    background: #92b93f;
+}
+.blue {
+    background: #48c7ff;
+}
+.yellow {
+    background: #ffbd2b;
+}
+.grey {
+    background: #9c9c9c;
+}
+.white {
+    background: #ffffff;
+}
+.dddddd {
+    background: #dddddd;
+}
+.black {
+    background: #101010;
+}
+
+/*For One, Landing - The Block Arrows*/
+.lego-arrow {
+    width: 50px;
+}
+.legoTop-arrow {
+    display: block;
+    width: 100%;
+    height: 10px;
+    font-size: 0;
+    text-align: center;
+}
+.legoTop-arrow div {
+	margin: 0 10px;
+}
+.connector-arrow {
+    display: inline-block;
+	width: 30px;
+  	height: 100%;
+}
+.legoBottom-arrow span {
+    height: 20px;
+    width: 100%;
+    color: #ffffff;
+    font-size: 21px;
+    display: block;
+    line-height: 1;
+    text-align: center;
+    box-sizing: border-box;
+}
+@media (max-height: 375px) and (orientation: landscape) {
+    .legoBottom-arrow, .legoBottom-arrow span {
+        height: 10px;
+    }
+}
+
+/*For Four, Blocks*/
+.lego {
+	width: 150px;
+}
+.legoTop {
+    display: block;
+    width: 100%;
+    height: 10px;
+    font-size: 0;
+    text-align: center;
+}
+.legoTop div {
+	margin: 0 10px;
+}
+.connector {
+  	display: inline-block;
+	width: 30px;
+  	height: 100%;
+}
+.legoBottom {
+  	width: 100%;
+  	font-size: 20px;
+}
+.legoBottom span {
+    height: 60px;
+    width: 100%;
+    color: #fff;
+    display: block;
+    line-height: 1;
+    padding: 20px 0;
+    text-align: center;
+    box-sizing: border-box;
+}

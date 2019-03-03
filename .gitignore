@@ -74,3 +74,8 @@ typings/
 
 # FuseBox cache
 .fusebox/
+
+#directories excluded
+digitalinvitation/*
+unconventionalweddings/*
+unconventionalweddings/
