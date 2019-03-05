@@ -261,21 +261,21 @@ section:nth-child(7) {
 }
 /*Don't consolidate background-size for #ref. Breaks images.*/
 #ref1 {
-    background: linear-gradient(rgba(156, 156, 156, .2), rgba(156, 156, 156, .2)),  url("../_images/thumb_uw.JPG");
+    background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)),  url("../_images/thumb_uw.JPG");
     background-size: 210px 350px;
 }
 #ref-digi {
-    background: linear-gradient(rgba(156, 156, 156, .2), rgba(156, 156, 156, .2)),  url("../_images/thumb_di.JPG");
+    background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)),  url("../_images/thumb_di.JPG");
     background-size: 210px 350px;
     cursor: pointer;
 }
 #ref-vue {
-    background: linear-gradient(rgba(156, 156, 156, .2), rgba(156, 156, 156, .2)),  url("../_images/thumb_at.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)),  url("../_images/thumb_at.jpg");
     background-size: 210px 350px;
     cursor: pointer;
 }
 #ref-lego {
-    background: linear-gradient(rgba(249, 190, 53, 0.5), rgba(249, 190, 53, .5)),  url("../_images/thumb_lego.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)),  url("../_images/thumb_lego.jpg");
     background-size: 210px 350px;
     cursor: pointer;
 }
@@ -300,8 +300,12 @@ section:nth-child(7) {
 /* img#showhideException {
     min-height: 1px;
 } */
+.justify-left {
+    text-align: justify;
+}
 .showhide p {
     width: 80%;
+    max-width: 800px;
     margin: 0 auto 30px;
     line-height: 1.75;
 }
