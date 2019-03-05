@@ -38,7 +38,7 @@ $(document).ready(function(){
         animCount++;
     }
     
-//    Smooth scroll with anchor tags----------
+//  Smooth scroll with anchor tags----------
     
     function scrollToAnchor(aid){
         var aTag = $("a[name='"+ aid +"']");
@@ -46,44 +46,68 @@ $(document).ready(function(){
     }
     
 
-    $("#ref3").click(function() {
+    $("#ref-digi").click(function() {
         scrollToAnchor('dropdown');
     });
 
-    $("#ref4").click(function() {
+    $("#ref-vue").click(function() {
+        scrollToAnchor('dropdown');
+    });
+
+    $("#ref-lego").click(function() {
         scrollToAnchor('dropdown');
     });
     
+    $("#closeDigi").click(function() {
+        scrollToAnchor('digiUp');
+    });
+
     $("#closeVue").click(function() {
         scrollToAnchor('vueUp');
     });
     
     $("#closeModel").click(function() {
-        scrollToAnchor('modelUp');
+        scrollToAnchor('legoUp');
     });
     
     
 //    Toggle drop down----------
     
-    $('#ref3').click(function(){
-        $('#show1').slideToggle('slow');
+    $('#ref-digi').click(function(){
+        $('#show-digi').slideToggle('slow');
     });
-    $('#ref4').click(function(){
-        $('#show2').slideToggle('slow');
+    $('#ref-vue').click(function(){
+        $('#show-vue').slideToggle('slow');
     });
-    $('#show1 .close').click(function(){
-        $('#show1').slideToggle('slow');
+    $('#ref-lego').click(function(){
+        $('#show-lego').slideToggle('slow');
     });
-    $('#show2 .close').click(function(){
-        $('#show2').slideToggle('slow');
+    $('#show-digi .close').click(function(){
+        $('#show-digi').slideToggle('slow');
     });
-    
-    
-    $('#ref3').click(function(){
-        $('#show2:visible').slideToggle('slow');
+    $('#show-vue .close').click(function(){
+        $('#show-vue').slideToggle('slow');
     });
-    $('#ref4').click(function(){
-        $('#show1:visible').slideToggle('slow');
+    $('#show-lego .close').click(function(){
+        $('#show-lego').slideToggle('slow');
     });
     
+    $('#ref-digi').click(function(){
+        $('#show-vue:visible').slideToggle('slow');
+    });
+    $('#ref-digi').click(function(){
+        $('#show-lego:visible').slideToggle('slow');
+    });
+    $('#ref-vue').click(function(){
+        $('#show-digi:visible').slideToggle('slow');
+    });
+    $('#ref-vue').click(function(){
+        $('#show-lego:visible').slideToggle('slow');
+    });
+    $('#ref-lego').click(function(){
+        $('#show-digi:visible').slideToggle('slow');
+    });
+    $('#ref-lego').click(function(){
+        $('#show-vue:visible').slideToggle('slow');
+    });
 });

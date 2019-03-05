@@ -237,7 +237,7 @@ section:nth-child(7) {
     height: 100%;
     padding: 50px 0;
 }
-#five a > div, #ref3, #ref4 {
+#five a > div, #ref-vue, #ref-lego {
     margin: 25px 20px 15px 20px;
     width: 210px;
     height: 350px;
@@ -261,19 +261,20 @@ section:nth-child(7) {
 }
 /*Don't consolidate background-size for #ref. Breaks images.*/
 #ref1 {
-    background: linear-gradient(rgba(96, 196, 254, .5), rgba(96, 196, 254, .5)),  url("../_images/thumb_uw.JPG");
+    background: linear-gradient(rgba(156, 156, 156, .2), rgba(156, 156, 156, .2)),  url("../_images/thumb_uw.JPG");
     background-size: 210px 350px;
 }
-#ref2 {
-    background: linear-gradient(rgba(145, 186, 65, 0.5), rgba(145, 186, 65, .5)),  url("../_images/thumb_di.JPG");
-    background-size: 210px 350px;
-}
-#ref3 {
-    background: linear-gradient(rgba(156, 156, 156, .5), rgba(156, 156, 156, .5)),  url("../_images/thumb_at.jpg");
+#ref-digi {
+    background: linear-gradient(rgba(156, 156, 156, .2), rgba(156, 156, 156, .2)),  url("../_images/thumb_di.JPG");
     background-size: 210px 350px;
     cursor: pointer;
 }
-#ref4 {
+#ref-vue {
+    background: linear-gradient(rgba(156, 156, 156, .2), rgba(156, 156, 156, .2)),  url("../_images/thumb_at.jpg");
+    background-size: 210px 350px;
+    cursor: pointer;
+}
+#ref-lego {
     background: linear-gradient(rgba(249, 190, 53, 0.5), rgba(249, 190, 53, .5)),  url("../_images/thumb_lego.jpg");
     background-size: 210px 350px;
     cursor: pointer;
@@ -293,12 +294,12 @@ section:nth-child(7) {
     /* min-height: 190px;
     max-height: 350px;
     min-width: 300px; */
-    max-width: 75%;
+    max-width: 70%;
     margin: 0 15px 30px 15px;
 }
-img#showhideException {
+/* img#showhideException {
     min-height: 1px;
-}
+} */
 .showhide p {
     width: 80%;
     margin: 0 auto 30px;
@@ -327,6 +328,10 @@ img#showhideException {
 .fontAwesome {
     font-size: 50px;
     color: #48c7ff;
+}
+
+.img_digi {
+    height: 300px;
 }
 /*----------End Five, Projects----------*/
 
@@ -417,7 +422,7 @@ footer {
     background: #ffbd2b;
 }
 .grey {
-    background: #9c9c9c;
+    background: #666;
 }
 .white {
     background: #ffffff;
@@ -483,17 +488,25 @@ footer {
 	width: 30px;
   	height: 100%;
 }
+.legoHeader,
 .legoBottom {
   	width: 100%;
   	font-size: 20px;
 }
-.legoBottom span {
-    height: 60px;
+.legoHeader span,
+.legoBottom span{
     width: 100%;
-    color: #fff;
     display: block;
     line-height: 1;
-    padding: 20px 0;
     text-align: center;
     box-sizing: border-box;
+}
+.legoHeader span {
+    height: 20px;
+    padding: 10px 0;
+}
+.legoBottom span {
+    height: 60px;
+    padding: 20px 0;
+    color: #fff;
 }
