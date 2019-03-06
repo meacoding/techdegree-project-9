@@ -49,26 +49,29 @@ $(document).ready(function(){
     $("#ref-digi").click(function() {
         scrollToAnchor('dropdown');
     });
-
     $("#ref-vue").click(function() {
         scrollToAnchor('dropdown');
     });
-
-    $("#ref-lego").click(function() {
+    $("#ref-dash").click(function() {
         scrollToAnchor('dropdown');
     });
+    // $("#ref-lego").click(function() {
+    //     scrollToAnchor('dropdown');
+    // });
     
+
     $("#closeDigi").click(function() {
         scrollToAnchor('digiUp');
     });
-
     $("#closeVue").click(function() {
         scrollToAnchor('vueUp');
     });
-    
-    $("#closeModel").click(function() {
-        scrollToAnchor('legoUp');
+    $("#closeDash").click(function() {
+        scrollToAnchor('dashUp');
     });
+    // $("#closeModel").click(function() {
+    //     scrollToAnchor('legoUp');
+    // });
     
     
 //    Toggle drop down----------
@@ -79,35 +82,55 @@ $(document).ready(function(){
     $('#ref-vue').click(function(){
         $('#show-vue').slideToggle('slow');
     });
-    $('#ref-lego').click(function(){
-        $('#show-lego').slideToggle('slow');
+    $('#ref-dash').click(function(){
+        $('#show-dash').slideToggle('slow');
     });
+    // $('#ref-lego').click(function(){
+    //     $('#show-lego').slideToggle('slow');
+    // });
+
     $('#show-digi .close').click(function(){
         $('#show-digi').slideToggle('slow');
     });
     $('#show-vue .close').click(function(){
         $('#show-vue').slideToggle('slow');
     });
-    $('#show-lego .close').click(function(){
-        $('#show-lego').slideToggle('slow');
+    $('#show-dash .close').click(function(){
+        $('#show-dash').slideToggle('slow');
     });
+    // $('#show-lego .close').click(function(){
+    //     $('#show-lego').slideToggle('slow');
+    // });
     
+
+
     $('#ref-digi').click(function(){
         $('#show-vue:visible').slideToggle('slow');
     });
+    // $('#ref-digi').click(function(){
+    //     $('#show-lego:visible').slideToggle('slow');
+    // });
     $('#ref-digi').click(function(){
-        $('#show-lego:visible').slideToggle('slow');
+        $('#show-dash:visible').slideToggle('slow');
     });
+
     $('#ref-vue').click(function(){
         $('#show-digi:visible').slideToggle('slow');
     });
+    // $('#ref-vue').click(function(){
+    //     $('#show-lego:visible').slideToggle('slow');
+    // });
     $('#ref-vue').click(function(){
         $('#show-lego:visible').slideToggle('slow');
     });
-    $('#ref-lego').click(function(){
-        $('#show-digi:visible').slideToggle('slow');
-    });
-    $('#ref-lego').click(function(){
-        $('#show-vue:visible').slideToggle('slow');
-    });
+
+    // $('#ref-lego').click(function(){
+    //     $('#show-digi:visible').slideToggle('slow');
+    // });
+    // $('#ref-lego').click(function(){
+    //     $('#show-vue:visible').slideToggle('slow');
+    // });
+    // $('#ref-lego').click(function(){
+    //     $('#show-dash:visible').slideToggle('slow');
+    // });
 });

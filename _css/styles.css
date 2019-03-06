@@ -274,6 +274,11 @@ section:nth-child(7) {
     background-size: 210px 350px;
     cursor: pointer;
 }
+#ref-dash {
+    background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)),  url("../_images/thumb_dash.jpg");
+    background-size: 210px 350px;
+    cursor: pointer;
+}
 #ref-lego {
     background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)),  url("../_images/thumb_lego.jpg");
     background-size: 210px 350px;
