@@ -235,7 +235,7 @@ section:nth-child(7) {
 /*----------Five, Projects----------*/
 #five {
     height: 100%;
-    padding: 50px 0;
+    padding: 50px 30px;
 }
 #five a > div, #ref-vue, #ref-lego {
     margin: 25px 20px 15px 20px;
@@ -287,7 +287,7 @@ section:nth-child(7) {
 .showhide {
     text-align: center;
     height: 100%;
-    padding:50px 0;
+    padding:50px 30px;
     background: #eee;
     display: none;
 }
@@ -296,9 +296,9 @@ section:nth-child(7) {
     margin: 0 15px 30px 15px;
 }
 .showhide img {
-    /* min-height: 190px;
-    max-height: 350px;
-    min-width: 300px; */
+    /* min-height: 190px; */
+    max-height: 600px;
+    /* min-width: 300px; */
     max-width: 70%;
     margin: 0 15px 30px 15px;
 }
@@ -338,9 +338,11 @@ section:nth-child(7) {
     font-size: 50px;
     color: #48c7ff;
 }
-
 .img_digi {
     height: 300px;
+}
+.img_mobile {
+    height: 400px;
 }
 /*----------End Five, Projects----------*/
 

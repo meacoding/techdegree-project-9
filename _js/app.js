@@ -76,6 +76,7 @@ $(document).ready(function(){
     
 //    Toggle drop down----------
     
+    // On click of project, open project
     $('#ref-digi').click(function(){
         $('#show-digi').slideToggle('slow');
     });
@@ -89,6 +90,7 @@ $(document).ready(function(){
     //     $('#show-lego').slideToggle('slow');
     // });
 
+    //On click of close arrow inside project, close project
     $('#show-digi .close').click(function(){
         $('#show-digi').slideToggle('slow');
     });
@@ -103,7 +105,8 @@ $(document).ready(function(){
     // });
     
 
-
+    // On click of project, close any other project
+    //Interactive Invitation
     $('#ref-digi').click(function(){
         $('#show-vue:visible').slideToggle('slow');
     });
@@ -114,6 +117,7 @@ $(document).ready(function(){
         $('#show-dash:visible').slideToggle('slow');
     });
 
+    //Accounting App
     $('#ref-vue').click(function(){
         $('#show-digi:visible').slideToggle('slow');
     });
@@ -124,6 +128,18 @@ $(document).ready(function(){
         $('#show-lego:visible').slideToggle('slow');
     });
 
+    //Responsive Dashboard
+    $('#ref-dash').click(function(){
+        $('#show-digi:visible').slideToggle('slow');
+    });
+    // $('#ref-dash').click(function(){
+    //     $('#show-lego:visible').slideToggle('slow');
+    // });
+    $('#ref-dash').click(function(){
+        $('#show-vue:visible').slideToggle('slow');
+    });
+
+    //LEGO
     // $('#ref-lego').click(function(){
     //     $('#show-digi:visible').slideToggle('slow');
     // });
@@ -133,4 +149,6 @@ $(document).ready(function(){
     // $('#ref-lego').click(function(){
     //     $('#show-dash:visible').slideToggle('slow');
     // });
+
+
 });
