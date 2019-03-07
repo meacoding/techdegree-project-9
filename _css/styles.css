@@ -13,14 +13,14 @@ body {
 }
 h1 {
     font-family: 'Amatic SC', sans-serif;
-    font-size: 5em;
+    font-size: 4em;
     line-height: 1;
     margin: 0; 
     padding: 0 20px;
 }
-@media (max-width: 400px) {
+@media (min-width: 400px) {
     h1 {
-        font-size: 4em;
+        font-size: 5em;
     }
 }
 p {
@@ -28,7 +28,7 @@ p {
 }
 section:nth-child(1) {
     background: #91ba41;
-    background: url('../_images/randomized-pattern.svg');
+    /* background: url('../_images/randomized-pattern.svg'); */
     background-size: 1500px auto;
     max-height: 675px;
     height: 100vh;
@@ -66,9 +66,9 @@ section:nth-child(6) {
     width: 100%;
 }
 section:nth-child(7) {
-    background: url('../_images/randomized-pattern.svg');
+    /* background: url('../_images/randomized-pattern.svg'); */
     background-size: 1500px auto;
-/*    background: #91ba41;*/
+   background: #91ba41;
     height: 100%;
     width: 100%;
     text-align: center;
@@ -184,23 +184,23 @@ section:nth-child(7) {
     display: inline-block;
     width: 200px;
     box-shadow: 10px 10px #262626;
-    margin: 0 0 0 20px;
+    margin:  0 0 50px 0;
 }
 #three p {
-    display: inline-block;
     max-width: 300px;
-    margin: 0 20px 0 50px;
     line-height: 1.75;
-    text-align: right;
+    display: block;
+    margin: 0 20px;
+    text-align: center;
 }
-@media (max-width: 620px) {
-    #three p {
-        display: block;
-        margin: 0 20px;
-        text-align: center;
-    }
+@media (min-width: 620px) {
     #three img {
-        margin:  0 0 50px 0;
+        margin: 0 0 0 20px;
+    }
+    #three p {
+        display: inline-block;
+        margin: 0 20px 0 50px;
+        text-align: right;
     }
 }
 /*----------End Two/Three, Greeting----------*/
@@ -224,11 +224,6 @@ section:nth-child(7) {
 .legoBottom .white {
     color: #101010;
 }
-@media (max-width: 620px) {
-    #four img {
-        margin: 0 20px;
-    }
-}
 /*----------End Four, Blocks----------*/
 
 
@@ -237,7 +232,7 @@ section:nth-child(7) {
     height: 100%;
     padding: 50px 30px;
 }
-#five a > div, #ref-vue, #ref-lego {
+#five a > div {
     margin: 25px 20px 15px 20px;
     width: 210px;
     height: 350px;
@@ -258,11 +253,19 @@ section:nth-child(7) {
     padding: 10px 0;
     background: #101010;
     transform: translateY(-50%);
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 /*Don't consolidate background-size for #ref. Breaks images.*/
-#ref1 {
+#ref-uw {
     background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)),  url("../_images/thumb_uw.JPG");
     background-size: 210px 350px;
+    cursor: pointer;
 }
 #ref-digi {
     background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)),  url("../_images/thumb_di.JPG");
@@ -344,6 +347,13 @@ section:nth-child(7) {
 .img_mobile {
     height: 400px;
 }
+.word-break {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+.fa-level-down-alt {
+    margin-left: 5px;
+}
 /*----------End Five, Projects----------*/
 
 
@@ -399,12 +409,6 @@ section:nth-child(7) {
 
 
 /*----------Eight, Contact----------*/
-#eight h1 a {
-    text-decoration: none;
-    color: #101010;
-    text-align: center;
-    transition: all .5s;
-}
 #eight .size {
     font-size: 3rem;
     color: #101010;
@@ -413,11 +417,6 @@ section:nth-child(7) {
 footer {
     text-align: center;
     padding: 20px 0;
-}
-@media (max-width: 500px) {
-    #eight h1 a {
-        font-size: 2rem;
-    }
 }
 /*----------End Eight, Contact----------*/
 

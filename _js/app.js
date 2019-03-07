@@ -45,7 +45,9 @@ $(document).ready(function(){
         $('html,body').animate({scrollTop: aTag.offset().top},'slow');
     }
     
-
+    $("#ref-uw").click(function() {
+        scrollToAnchor('dropdown');
+    });
     $("#ref-digi").click(function() {
         scrollToAnchor('dropdown');
     });
@@ -60,6 +62,9 @@ $(document).ready(function(){
     // });
     
 
+    $("#closeUW").click(function() {
+        scrollToAnchor('digiUp');
+    });
     $("#closeDigi").click(function() {
         scrollToAnchor('digiUp');
     });
@@ -77,6 +82,9 @@ $(document).ready(function(){
 //    Toggle drop down----------
     
     // On click of project, open project
+    $('#ref-uw').click(function(){
+        $('#show-uw').slideToggle('slow');
+    });
     $('#ref-digi').click(function(){
         $('#show-digi').slideToggle('slow');
     });
@@ -91,6 +99,9 @@ $(document).ready(function(){
     // });
 
     //On click of close arrow inside project, close project
+    $('#show-uw .close').click(function(){
+        $('#show-uw').slideToggle('slow');
+    });
     $('#show-digi .close').click(function(){
         $('#show-digi').slideToggle('slow');
     });
@@ -106,7 +117,25 @@ $(document).ready(function(){
     
 
     // On click of project, close any other project
+
+    //Unconventional Weddings
+    $('#ref-uw').click(function(){
+        $('#show-digi:visible').slideToggle('slow');
+    });
+    $('#ref-uw').click(function(){
+        $('#show-vue:visible').slideToggle('slow');
+    });
+    // $('#ref-uw').click(function(){
+    //     $('#show-lego:visible').slideToggle('slow');
+    // });
+    $('#ref-uw').click(function(){
+        $('#show-dash:visible').slideToggle('slow');
+    });
+
     //Interactive Invitation
+    $('#ref-digi').click(function(){
+        $('#show-uw:visible').slideToggle('slow');
+    });
     $('#ref-digi').click(function(){
         $('#show-vue:visible').slideToggle('slow');
     });
@@ -119,16 +148,22 @@ $(document).ready(function(){
 
     //Accounting App
     $('#ref-vue').click(function(){
+        $('#show-uw:visible').slideToggle('slow');
+    });
+    $('#ref-vue').click(function(){
         $('#show-digi:visible').slideToggle('slow');
     });
     // $('#ref-vue').click(function(){
     //     $('#show-lego:visible').slideToggle('slow');
     // });
     $('#ref-vue').click(function(){
-        $('#show-lego:visible').slideToggle('slow');
+        $('#show-dash:visible').slideToggle('slow');
     });
 
     //Responsive Dashboard
+    $('#ref-dash').click(function(){
+        $('#show-uw:visible').slideToggle('slow');
+    });
     $('#ref-dash').click(function(){
         $('#show-digi:visible').slideToggle('slow');
     });
@@ -140,6 +175,9 @@ $(document).ready(function(){
     });
 
     //LEGO
+    // $('#ref-lego').click(function(){
+    //     $('#show-uw:visible').slideToggle('slow');
+    // });
     // $('#ref-lego').click(function(){
     //     $('#show-digi:visible').slideToggle('slow');
     // });
