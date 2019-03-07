@@ -26,6 +26,11 @@ h1 {
 p {
     font-size: 1.2em;
 }
+.contact-me {
+    font-size: 3rem;
+    color: #101010;
+    padding: 0 10px 10px;
+}
 section:nth-child(1) {
     background: #91ba41;
     /* background: url('../_images/randomized-pattern.svg'); */
@@ -170,39 +175,46 @@ section:nth-child(7) {
 /*----------Two/Three, Greeting----------*/
 #two {
     height: 100%;
-    padding-top: 50px;
+    padding-top: 75px;
     text-align: center;
 }
 #two h1 {
     display: block;
 }
 #three {
-    padding: 50px 0;
+    padding: 75px 0 50px;
     text-align: center;
-    display: flex;
+    /* display: flex; */
 }
 #three img {
     display: block;
     width: 200px;
+    height: 256px;
     box-shadow: 10px 10px #262626;
     margin:  0 0 50px 0;
 }
 #three p {
-    max-width: 400px;
     line-height: 1.75;
     display: block;
-    margin: 0 20px;
+    /* margin: 0 20px; */
     text-align: center;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto 30px;
 }
 @media (min-width: 620px) {
     #three img {
-        margin: 0 0 0 20px;
+        /* margin: 0 0 0 20px; */
     }
     #three p {
         display: inline-block;
-        margin: 0 20px 0 50px;
-        text-align: right;
+        margin: 0 50px 0 50px;
+        text-align: justify;
     }
+}
+.face-header {
+    display: flex;
+    justify-content: center;
 }
 /*----------End Two/Three, Greeting----------*/
 
@@ -291,7 +303,7 @@ section:nth-child(7) {
 .showhide {
     text-align: center;
     height: 100%;
-    padding:50px 30px;
+    padding:50px 0;
     background: #eee;
     display: none;
 }
