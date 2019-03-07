@@ -31,7 +31,7 @@ section:nth-child(1) {
     /* background: url('../_images/randomized-pattern.svg'); */
     background-size: 1500px auto;
     max-height: 675px;
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
 }
 section:nth-child(2) {
@@ -179,15 +179,16 @@ section:nth-child(7) {
 #three {
     padding: 50px 0;
     text-align: center;
+    display: flex;
 }
 #three img {
-    display: inline-block;
+    display: block;
     width: 200px;
     box-shadow: 10px 10px #262626;
     margin:  0 0 50px 0;
 }
 #three p {
-    max-width: 300px;
+    max-width: 400px;
     line-height: 1.75;
     display: block;
     margin: 0 20px;
