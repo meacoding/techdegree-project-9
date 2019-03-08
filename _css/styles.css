@@ -16,7 +16,7 @@ h1 {
     font-size: 4em;
     line-height: 1;
     margin: 0; 
-    padding: 0 20px;
+    padding:20px;
 }
 @media (min-width: 400px) {
     h1 {
@@ -25,6 +25,9 @@ h1 {
 }
 p {
     font-size: 1.2em;
+}
+.justify-left {
+    text-align: justify;
 }
 .contact-me {
     font-size: 3rem;
@@ -175,14 +178,15 @@ section:nth-child(7) {
 /*----------Two/Three, Greeting----------*/
 #two {
     height: 100%;
-    padding-top: 75px;
+    padding: 60px 50px;
     text-align: center;
 }
 #two h1 {
     display: block;
 }
 #three {
-    padding: 75px 0 50px;
+    /* padding: 75px 0 50px; */
+    padding: 0 0 50px;
     text-align: center;
     /* display: flex; */
 }
@@ -221,7 +225,7 @@ section:nth-child(7) {
 
 /*----------Four, Blocks----------*/
 #four {
-    padding-top: 50px;
+    padding: 60px 50px;
     text-align: center;
 }
 #four h1 {
@@ -243,7 +247,7 @@ section:nth-child(7) {
 /*----------Five, Projects----------*/
 #five {
     height: 100%;
-    padding: 50px 30px;
+    padding: 60px 50px;
 }
 #five a > div {
     margin: 25px 20px 15px 20px;
@@ -321,9 +325,6 @@ section:nth-child(7) {
 /* img#showhideException {
     min-height: 1px;
 } */
-.justify-left {
-    text-align: justify;
-}
 .showhide p {
     width: 80%;
     max-width: 800px;
@@ -372,7 +373,7 @@ section:nth-child(7) {
 
 /*----------Six, Hire Me----------*/
 #six {
-    padding: 50px 20px;
+    padding: 60px 50px;
     text-align: center;
 }
 #six h1 {
@@ -382,7 +383,9 @@ section:nth-child(7) {
 #six p {
     display: block; /*makes text a block box, allowing img to be inline and centered*/
     color: white;
-    max-width: 350px;
+    width: 80%;
+    max-width: 800px;
+    /* margin: 0 auto 30px; */
     line-height: 1.75;
     margin: 0 auto 50px;
 }
