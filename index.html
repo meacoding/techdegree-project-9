@@ -24,24 +24,23 @@
 
 <body>
     <div>
-        <section id="section-landing">
-            <div id="three">
-                <div id="two">
+        <section id="section-landing" class="uniform-layout">
+            <div class="uniform-width">
+                <div>
                     <h1>Greetings, human.</h1>
                 </div>
-                <div class="face-header">
-                    <img src="_images/photoofme.jpg" alt="">
+                <div class="flex">
+                    <img  id="img-landing" src="_images/photoofme.jpg" alt="">
                 </div>   
-                <br>
-                <p>
+                <p class="justify-left">
                     My name is <strong>Amanda Harness</strong> and I’m a front-end web developer with a passion for making 
                     things and solving problems. I think of code as building blocks. Get the right pieces 
                     together and I can make things!<br />
                 </p>
             </div>
         </section>
-        <section id="section-blocks">
-            <div id="four">
+        <section id="section-blocks" class="uniform-layout flex">
+            <div class="uniform-width">
                 <h1>Building Blocks</h1>
                 <div class="block">
                     <div class="lego">
@@ -120,213 +119,215 @@
                 </div>
             </div>
         </section>
-        <section id="section-projects">       
-            <div id="five">
+        <section id="section-projects" class="uniform-layout">       
+            <div class="uniform-width">
                 <h1>View Projects</h1>
-                <a name="uwUp" id="uw"><div class="ref" id="ref-uw"><p>Unconventional Weddings  <i class="fas fa-level-down-alt"></i></p></div></a>
-                <a name="digiUp" id="digi"><div class="ref" id="ref-digi"><p>Interactive Invitation  <i class="fas fa-level-down-alt"></i></p></div></a>
-                <a name="vueUp" id="vue"><div class="ref" id="ref-vue"><p>Accounting Tool App <i class="fas fa-level-down-alt"></i></p></div></a>
-                <a name="dashUp" id="model"><div class="ref" id="ref-dash"><p>Interactive Dashboard <i class="fas fa-level-down-alt"></i></p></div></a>
+                <a name="uwUp" id="uw"><div class="ref" id="ref-uw"><p class="flex">Unconventional Weddings  <i class="fas fa-level-down-alt"></i></p></div></a>
+                <a name="digiUp" id="digi"><div class="ref" id="ref-digi"><p class="flex">Interactive Invitation  <i class="fas fa-level-down-alt"></i></p></div></a>
+                <a name="vueUp" id="vue"><div class="ref" id="ref-vue"><p class="flex">Accounting Tool App <i class="fas fa-level-down-alt"></i></p></div></a>
+                <a name="dashUp" id="model"><div class="ref" id="ref-dash"><p class="flex">Interactive Dashboard <i class="fas fa-level-down-alt"></i></p></div></a>
                 <!-- <a name="legoUp" id="model"><div class="ref" id="ref-lego"><p>Model to Creation  <i class="fas fa-level-down-alt"></i></p></div></a> -->
             </div>
-            <a name="dropdown">
-            <div class="showhide" id="show-uw">
-                <h1 class="word-break">Unconventional Weddings</h1>
-                <br>
-                <img class="img_mobile" src="_images/uw_1.jpg" alt="">
-                <img class="img_mobile" src="_images/uw_2.jpg" alt="">
-                <img class="img_mobile" src="_images/uw_3.jpg" alt="">
-                <img class="img_mobile" src="_images/uw_4.jpg" alt="">
-                <img class="img_mobile" src="_images/uw_5.jpg" alt="">
-                <h2>What is it?</h2>
-                <p>An interactive object that presents a quest to the user.</p>
-                <br>
-                <h2>Technologies and skills used</h2>
-                <p>HTML, CSS, JavaScript, jQuery, Bootstrap</p>
-                <br>
-                <h2>Reason for creation</h2>
-                <p>To demonstrate ability to create intermediate animations with CSS and jQuery.</p>
-                <br>
-                <h2>What I did</h2>
-                <p class="justify-left">The HTML is laid out in three phases, each containing a different content/animation 
-                    grouping. Phase 2 utilizes Bootstrap's grid system. All animated elements are built with CSS animations, 
-                    transforms and keyframes alongside jQuery.
-                </p>
-                <br>
-                <p class="justify-left">I did have one roadblock during this project and consequently learned about 
-                    preventDefault(). Initializing the card insertion event in the second phase requires either 
-                    click or touchstart. I didn't know that if one event was triggered that the other event 
-                    could still be triggered. My mentor ever so graciously pointed out that I needed to prevent 
-                    the other event from being triggered with preventDefault(). Thanks!
-                <br>
-                <a class="fontAwesome" href="/unconventionalweddings/index.html" target="_blank"><p><i class="fab fa-github"></i></p></a>
-                <a id="closeUW"><div class="close">&uarr;</div></a>
-            </div>
-            <div class="showhide" id="show-digi">
-                <h1>Interactive Invitation</h1>
-                <br>
-                <img class="img_digi" src="_images/digi_1.jpg" alt="">
-                <img class="img_digi" src="_images/digi_2.jpg" alt="">
-                <img class="img_digi" src="_images/digi_3.jpg" alt="">
-                <img class="img_digi" src="_images/digi_4.jpg" alt="">
-                <h2>What is it?</h2>
-                <p>An interactive object that presents a quest to the user.</p>
-                <br>
-                <h2>Technologies and skills used</h2>
-                <p>HTML, CSS, JavaScript, jQuery, Bootstrap</p>
-                <br>
-                <h2>Reason for creation</h2>
-                <p>To demonstrate ability to create intermediate animations with CSS and jQuery.</p>
-                <br>
-                <h2>What I did</h2>
-                <p class="justify-left">The HTML is laid out in three phases, each containing a different content/animation 
-                    grouping. Phase 2 utilizes Bootstrap's grid system. All animated elements are built with CSS animations, 
-                    transforms and keyframes alongside jQuery.
-                </p>
-                <br>
-                <h2>Backstory</h2>
-                <p class="justify-left">The idea for this project was inspired by World of Warcraft. I thought it would be cool
-                    to come across a quest object that needed my attention. In my head I hear a gnome saying, 
-                    "Take this to data extraction terminal ahead." You insert the card, the terminal extracts 
-                    the data and an invitation appears on the screen.
-                </p>
-                <br>
-                <p class="justify-left">Designing what the project should look like was a bit of a challenge. In 
-                    World of Warcraft you'd find an object on the ground with an ethereal white glow that 
-                    had a yellow exclamation mark hovering above it. I excluded the white glow and combined 
-                    the card object with the exclamation mark. Since I wasn't looking to achieve graphical 
-                    greatness, this works perfectly.
-                </p>
-                <br>
-                <p class="justify-left">Creating the animations was relatively simple. It required an incredible amount of trial and 
-                    error with the timing of the various animations, especially with the monospace text readout 
-                    and the blinking text cursor. The initial pacing was too slow, of course. After 
-                    replaying the sequence about a hundred times and getting feedback from friends, I achieved 
-                    a happy pace that could successfully hold the user's attention.
-                </p>
-                <br>
-                <p class="justify-left">I did have one roadblock during this project and consequently learned about 
-                    preventDefault(). Initializing the card insertion event in the second phase requires either 
-                    click or touchstart. I didn't know that if one event was triggered that the other event 
-                    could still be triggered. My mentor ever so graciously pointed out that I needed to prevent 
-                    the other event from being triggered with preventDefault(). Thanks!
-                <br>
-                <a class="fontAwesome" href="/digitalinvitation/index.html" target="_blank"><p><i class="fab fa-github"></i></p></a>
-                <a id="closeDigi"><div class="close">&uarr;</div></a>
-            </div>
-            <div class="showhide" id="show-vue">
-                <h1>Accounting App</h1>
-                <br>
-                <img src="_images/vue-electron.JPG" alt="">
-                <h2>What is it?</h2>
-                <p>A desktop app that replaces a user error-prone spreadsheet used in my current accounts payable position.</p>
-                <br>
-                <h2>Technologies and skills used</h2>
-                <p>HTML, CSS, SASS, JavaScript, Vue.js, Electron</p>
-                <br>
-                <h2>Reason for creation</h2>
-                <p>To learn a reactive framwork.</p>
-                <br>
-                <h2>What I did</h2>
-                <p class="justify-left">hi 
-                    
-                </p>
-                <br>
-                <h2>Backstory</h2>
-                <p class="justify-left">I work in accounts payable. We frequently need to perform calculations for material purchases over a certain threshold.
-                    We have a spreadsheet for that.
-                </p>
-                <br>
-                <img src="_images/vue-spreadsheet.JPG" alt="">
-                <br>
-                <p class="justify-left">This tool is unnecessarily difficult to learn and understand. We have multiple versions for different
-                    tax rate and freight scenarios. I thought to myself, "Maybe I could consolidate these and make
-                    one single spreadsheet that does everything and is easier on the eyes."
-                </p>
-                <br>
-                <p class="justify-left">I saw this as the perfect opportunity to stretch my legs in a new framework—Vue.js. I asked my mentor
-                    if he could provide the foundation to start a new project in Vue.js as if it were a project he'd develop for his company.
-                    "Sure!" he said. "I'll even throw Electron in there so you can make a desktop app instead of a web app." Say what?
-                </p>
-                <br>
-                <p class="justify-left">This was the first programming anything I learned through immersion. I didn't know how Vue.js worked let alone what a
-                    package.json file was. I stayed inside the Vue components for as long as I could. They were a safe place to be. The day finally
-                    came when I needed to store values. There was a bit of suffering on my side but after an ephiphany the world made sense 
-                    again and I could store values.
-                </p>
-                <br>
-                <p class="justify-left">Once I got the hang of how to code and maneuver around this big, scary "real-world" project, I started to appreciate
-                    the simplicity of putting all relevant code in one self-contained Vue component. I could make the components talk
-                    to each other and, together, they became an app. How cool is that!
-                </p>
-                <br>
-                <p class="justify-left">This project was daunting. I was frustrated not knowing 
-                    the syntax or terminology when asking for help from a human or Google. To me everything in Vue is still a thing 
-                    that does a thing that talks to the other thing. Ah the sweet memories of trying out a new framework.
-                </p>
-                <br>
-                <h2></h2>
-                <a class="fontAwesome" href="https://github.com/meacoding/accounting-tools" target="_blank"><p><i class="fab fa-github"></i></p></a>
-                <a id="closeVue"><div class="close">&uarr;</div></a>
-            </div>
-            <div class="showhide" id="show-dash">
-                <h1>Interactive Dashboard</h1>
-                <br>
-                <img class="img_mobile" src="_images/dash_2.jpg" alt=""> 
-                <img class="img_mobile" src="_images/dash_3.jpg" alt=""> 
-                <img class="img_mobile" src="_images/dash_4.jpg" alt=""> 
-                <img class="img_mobile" src="_images/dash_5.jpg" alt=""> 
-                <br>
-                <br>
-                <h2>What is it?</h2>
-                <p>An interactive dashboard for a faux web application. Project from Treehouse Techdegree for Front-End Web Development.</p>
-                <br>
-                <h2>Technologies and skills used</h2>
-                <p>HTML, CSS, SASS, JavaScript, jQuery, Chart.js plugin, SVG manipulation</p>
-                <br>
-                <h2>Reason for creation</h2>
-                <p>To build a comprehensive project utilizing skills learned up to this point in the Treehouse Techdegree program.</p>
-                <br>
-                <h2>How it's made</h2>
-                <p class="justify-left">
-                    Project built to match mockup provided for large screens. Small and medium screen size layouts determined by me. 
-                    The layout is supported with CSS Grid Layout. SASS is utilized to keep the styling manageable. The chart widgets are 
-                    created with Chart.js. Interactivity written in JavaScript and jQuery.
-                </p>
-                <br>
-                <h2>Backstory</h2>
-                <p class="justify-left">Let me just say that of all nine projects, this was the most frustrating to build but the most 
-                    satisfying after it was complete. I am quite proud.
-                </p>
-                <br>
-                <p class="justify-left">Figuring out Chart.js was a feat. Sure, I consulted the documentation, 
-                    but like many documentations it doesn't contain every little capability or command. Obviously 
-                    I figured it outI felt like 
-                    that was a project all by itself!
-                </p>
-                <br>
-                <p class="justify-left">Two other pieces of the project need elaboration. First, 
-                    the SVGs in the Social Stats section - one aspect of each SVG was required to be manually changed 
-                    by me to match the mockup. Check the initial GitHub commit for given SVG files. Second, the user 
-                    activity information could have been hard-coded in the HTML but I decided to mimick parsed JSON. 
-                    The dashboard is ready for dynamic data. It was a great test of strength in JavaScript.
-                </p>
-                <br>
-                <img src="_images/dash_1.jpg" alt="">
-                <br>
-                <a class="fontAwesome" href="https://github.com/meacoding/techdegree-project-7" target="_blank"><p><i class="fab fa-github"></i></p></a>
-                <a id="closeDash"><div class="close">&uarr;</div></a>
-            </div>
-            <!-- <div class="showhide" id="show-lego">
-                <h1>Model to Creation</h1>
-                <img src="_images/lego-model.jpg" alt="">
-                <img src="_images/lego-build.jpg" alt="">
-                <p>From real life model to digital LEGO creation, a house I made out of virtual building blocks — much like I can with a website with code.</p>
-                <a id="closeModel"><div class="close">&uarr;</div></a>
-            </div> -->
         </section>
-        <section id="section-hireme">       
-            <div id="six">
+        <section id="section-showProjects"> 
+            <a name="dropdown">
+                <div class="showhide uniform-layout uniform-width " id="show-uw">
+                    <h1 class="word-break">Unconventional Weddings</h1>
+                    <br>
+                    <img class="img-mobile" src="_images/uw_1.jpg" alt="">
+                    <img class="img-mobile" src="_images/uw_2.jpg" alt="">
+                    <img class="img-mobile" src="_images/uw_3.jpg" alt="">
+                    <img class="img-mobile" src="_images/uw_4.jpg" alt="">
+                    <img class="img-mobile" src="_images/uw_5.jpg" alt="">
+                    <h2>What is it?</h2>
+                    <p>An interactive object that presents a quest to the user.</p>
+                    <br>
+                    <h2>Technologies and skills used</h2>
+                    <p>HTML, CSS, JavaScript, jQuery, Bootstrap</p>
+                    <br>
+                    <h2>Reason for creation</h2>
+                    <p>To demonstrate ability to create intermediate animations with CSS and jQuery.</p>
+                    <br>
+                    <h2>What I did</h2>
+                    <p class="justify-left">The HTML is laid out in three phases, each containing a different content/animation 
+                        grouping. Phase 2 utilizes Bootstrap's grid system. All animated elements are built with CSS animations, 
+                        transforms and keyframes alongside jQuery.
+                    </p>
+                    <br>
+                    <p class="justify-left">I did have one roadblock during this project and consequently learned about 
+                        preventDefault(). Initializing the card insertion event in the second phase requires either 
+                        click or touchstart. I didn't know that if one event was triggered that the other event 
+                        could still be triggered. My mentor ever so graciously pointed out that I needed to prevent 
+                        the other event from being triggered with preventDefault(). Thanks!
+                    <br>
+                    <a class="fontAwesome" href="/unconventionalweddings/index.html" target="_blank"><p><i class="fab fa-github"></i></p></a>
+                    <a id="closeUW"><div class="close">&uarr;</div></a>
+                </div>
+                <div class="showhide uniform-layout uniform-width " id="show-digi">
+                    <h1>Interactive Invitation</h1>
+                    <br>
+                    <img class="img-digi" src="_images/digi_1.jpg" alt="">
+                    <img class="img-digi" src="_images/digi_2.jpg" alt="">
+                    <img class="img-digi" src="_images/digi_3.jpg" alt="">
+                    <img class="img-digi" src="_images/digi_4.jpg" alt="">
+                    <h2>What is it?</h2>
+                    <p>An interactive object that presents a quest to the user.</p>
+                    <br>
+                    <h2>Technologies and skills used</h2>
+                    <p>HTML, CSS, JavaScript, jQuery, Bootstrap</p>
+                    <br>
+                    <h2>Reason for creation</h2>
+                    <p>To demonstrate ability to create intermediate animations with CSS and jQuery.</p>
+                    <br>
+                    <h2>What I did</h2>
+                    <p class="justify-left">The HTML is laid out in three phases, each containing a different content/animation 
+                        grouping. Phase 2 utilizes Bootstrap's grid system. All animated elements are built with CSS animations, 
+                        transforms and keyframes alongside jQuery.
+                    </p>
+                    <br>
+                    <h2>Backstory</h2>
+                    <p class="justify-left">The idea for this project was inspired by World of Warcraft. I thought it would be cool
+                        to come across a quest object that needed my attention. In my head I hear a gnome saying, 
+                        "Take this to data extraction terminal ahead." You insert the card, the terminal extracts 
+                        the data and an invitation appears on the screen.
+                    </p>
+                    <br>
+                    <p class="justify-left">Designing what the project should look like was a bit of a challenge. In 
+                        World of Warcraft you'd find an object on the ground with an ethereal white glow that 
+                        had a yellow exclamation mark hovering above it. I excluded the white glow and combined 
+                        the card object with the exclamation mark. Since I wasn't looking to achieve graphical 
+                        greatness, this works perfectly.
+                    </p>
+                    <br>
+                    <p class="justify-left">Creating the animations was relatively simple. It required an incredible amount of trial and 
+                        error with the timing of the various animations, especially with the monospace text readout 
+                        and the blinking text cursor. The initial pacing was too slow, of course. After 
+                        replaying the sequence about a hundred times and getting feedback from friends, I achieved 
+                        a happy pace that could successfully hold the user's attention.
+                    </p>
+                    <br>
+                    <p class="justify-left">I did have one roadblock during this project and consequently learned about 
+                        preventDefault(). Initializing the card insertion event in the second phase requires either 
+                        click or touchstart. I didn't know that if one event was triggered that the other event 
+                        could still be triggered. My mentor ever so graciously pointed out that I needed to prevent 
+                        the other event from being triggered with preventDefault(). Thanks!
+                    <br>
+                    <a class="fontAwesome" href="/digitalinvitation/index.html" target="_blank"><p><i class="fab fa-github"></i></p></a>
+                    <a id="closeDigi"><div class="close">&uarr;</div></a>
+                </div>
+                <div class="showhide uniform-layout uniform-width " id="show-vue">
+                    <h1>Accounting App</h1>
+                    <br>
+                    <img src="_images/vue-electron.JPG" alt="">
+                    <h2>What is it?</h2>
+                    <p>A desktop app that replaces a user error-prone spreadsheet used in my current accounts payable position.</p>
+                    <br>
+                    <h2>Technologies and skills used</h2>
+                    <p>HTML, CSS, SASS, JavaScript, Vue.js, Electron</p>
+                    <br>
+                    <h2>Reason for creation</h2>
+                    <p>To learn a reactive framwork.</p>
+                    <br>
+                    <h2>What I did</h2>
+                    <p class="justify-left">hi 
+                        
+                    </p>
+                    <br>
+                    <h2>Backstory</h2>
+                    <p class="justify-left">I work in accounts payable. We frequently need to perform calculations for material purchases over a certain threshold.
+                        We have a spreadsheet for that.
+                    </p>
+                    <br>
+                    <img src="_images/vue-spreadsheet.JPG" alt="">
+                    <br>
+                    <p class="justify-left">This tool is unnecessarily difficult to learn and understand. We have multiple versions for different
+                        tax rate and freight scenarios. I thought to myself, "Maybe I could consolidate these and make
+                        one single spreadsheet that does everything and is easier on the eyes."
+                    </p>
+                    <br>
+                    <p class="justify-left">I saw this as the perfect opportunity to stretch my legs in a new framework—Vue.js. I asked my mentor
+                        if he could provide the foundation to start a new project in Vue.js as if it were a project he'd develop for his company.
+                        "Sure!" he said. "I'll even throw Electron in there so you can make a desktop app instead of a web app." Say what?
+                    </p>
+                    <br>
+                    <p class="justify-left">This was the first programming anything I learned through immersion. I didn't know how Vue.js worked let alone what a
+                        package.json file was. I stayed inside the Vue components for as long as I could. They were a safe place to be. The day finally
+                        came when I needed to store values. There was a bit of suffering on my side but after an ephiphany the world made sense 
+                        again and I could store values.
+                    </p>
+                    <br>
+                    <p class="justify-left">Once I got the hang of how to code and maneuver around this big, scary "real-world" project, I started to appreciate
+                        the simplicity of putting all relevant code in one self-contained Vue component. I could make the components talk
+                        to each other and, together, they became an app. How cool is that!
+                    </p>
+                    <br>
+                    <p class="justify-left">This project was daunting. I was frustrated not knowing 
+                        the syntax or terminology when asking for help from a human or Google. To me everything in Vue is still a thing 
+                        that does a thing that talks to the other thing. Ah the sweet memories of trying out a new framework.
+                    </p>
+                    <br>
+                    <h2></h2>
+                    <a class="fontAwesome" href="https://github.com/meacoding/accounting-tools" target="_blank"><p><i class="fab fa-github"></i></p></a>
+                    <a id="closeVue"><div class="close">&uarr;</div></a>
+                </div>
+                <div class="showhide uniform-layout uniform-width " id="show-dash">
+                    <h1>Interactive Dashboard</h1>
+                    <br>
+                    <img class="img-mobile" src="_images/dash_2.jpg" alt=""> 
+                    <img class="img-mobile" src="_images/dash_3.jpg" alt=""> 
+                    <img class="img-mobile" src="_images/dash_4.jpg" alt=""> 
+                    <img class="img-mobile" src="_images/dash_5.jpg" alt=""> 
+                    <br>
+                    <br>
+                    <h2>What is it?</h2>
+                    <p>An interactive dashboard for a faux web application. Project from Treehouse Techdegree for Front-End Web Development.</p>
+                    <br>
+                    <h2>Technologies and skills used</h2>
+                    <p>HTML, CSS, SASS, JavaScript, jQuery, Chart.js plugin, SVG manipulation</p>
+                    <br>
+                    <h2>Reason for creation</h2>
+                    <p>To build a comprehensive project utilizing skills learned up to this point in the Treehouse Techdegree program.</p>
+                    <br>
+                    <h2>How it's made</h2>
+                    <p class="justify-left">
+                        Project built to match mockup provided for large screens. Small and medium screen size layouts determined by me. 
+                        The layout is supported with CSS Grid Layout. SASS is utilized to keep the styling manageable. The chart widgets are 
+                        created with Chart.js. Interactivity written in JavaScript and jQuery.
+                    </p>
+                    <br>
+                    <h2>Backstory</h2>
+                    <p class="justify-left">Let me just say that of all nine projects, this was the most frustrating to build but the most 
+                        satisfying after it was complete. I am quite proud.
+                    </p>
+                    <br>
+                    <p class="justify-left">Figuring out Chart.js was a feat. Sure, I consulted the documentation, 
+                        but like many documentations it doesn't contain every little capability or command. Obviously 
+                        I figured it outI felt like 
+                        that was a project all by itself!
+                    </p>
+                    <br>
+                    <p class="justify-left">Two other pieces of the project need elaboration. First, 
+                        the SVGs in the Social Stats section - one aspect of each SVG was required to be manually changed 
+                        by me to match the mockup. Check the initial GitHub commit for given SVG files. Second, the user 
+                        activity information could have been hard-coded in the HTML but I decided to mimick parsed JSON. 
+                        The dashboard is ready for dynamic data. It was a great test of strength in JavaScript.
+                    </p>
+                    <br>
+                    <img src="_images/dash_1.jpg" alt="">
+                    <br>
+                    <a class="fontAwesome" href="https://github.com/meacoding/techdegree-project-7" target="_blank"><p><i class="fab fa-github"></i></p></a>
+                    <a id="closeDash"><div class="close">&uarr;</div></a>
+                </div>
+                <!-- <div class="showhide uniform-layout uniform-width " id="show-lego">
+                    <h1>Model to Creation</h1>
+                    <img src="_images/lego-model.jpg" alt="">
+                    <img src="_images/lego-build.jpg" alt="">
+                    <p>From real life model to digital LEGO creation, a house I made out of virtual building blocks — much like I can with a website with code.</p>
+                    <a id="closeModel"><div class="close">&uarr;</div></a>
+                </div> -->
+        </section>
+        <section id="section-hireMe" class="uniform-layout">       
+            <div class="uniform-width">
                 <h1>Hire Me</h1>
                 <p class="justify-left">
                     Professionally I have a background in accounting. I'm headed down my new career path because 
@@ -340,20 +341,20 @@
                 <img src="_images/van.png" alt="">
             </div>
         </section>
-        <section id="section-video"> 
-            <div id="seven">
+        <section id="section-video" class="uniform-layout"> 
+            <div class="uniform-width">
                 <h1>Video Resume</h1>
                 <div id="youtube">
                     <iframe width="533" height="300" src="https://www.youtube.com/embed/MqVf8N_OWOs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
             </div>
         </section>
-        <footer id="eight">
+        <section id="section-contact">
             <a href="https://github.com/meacoding/" target="_blank"><i class="fab fa-github size"></i></a> 
             <a href="mailto:amanda@amandaharness.com?Subject=Job%20Opportunity"><i class="fas fa-envelope size"></i></a>
             <br>
             <small>&copy; <script>new Date().getFullYear()>2016&&document.write(new Date().getFullYear());</script> Amanda Harness</small>
-        </footer>
+        </section>
         
     </div>
 <script src="_js/app.js"></script>

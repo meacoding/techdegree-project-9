@@ -17,6 +17,7 @@ h1 {
     line-height: 1;
     margin: 0; 
     padding:20px;
+    margin-bottom: 40px;
 }
 @media (min-width: 400px) {
     h1 {
@@ -25,110 +26,57 @@ h1 {
 }
 p {
     font-size: 1.2em;
+    line-height: 1.75;
+
 }
 .justify-left {
     text-align: justify;
 }
-#section-landing,
-#section-blocks,
-#section-projects,
-#section-hireme,
-#section-video {
-    height: 100%;
-    width: 100%;
-}
-
-#section-landing,
-#section-blocks {
+.flex {
     display: flex; 
     align-items: center; 
     justify-content: center;
 }
-#section-landing {
-    background: #FFFFFF;
-}
-#section-blocks {
-    background: #101010;
-}
-#section-projects {
-    background: #FFFFFF;
-}
-#section-hireme {
-    background: #101010;
-}
-#section-video {
-    background-size: 1500px auto;
-    background: #91ba41;
+.uniform-layout {
+    box-sizing: border-box;
+    padding: 30px 0 50px;
     text-align: center;
-    padding-bottom: 30px;
+    height: 100%;
+    width: 100%;
 }
-@media (max-height: 700px) {
-    #section-video {
-        padding-bottom: 20px;
+@media (min-width: 700px) {
+    .uniform-layout {
+        padding: 60px 50px;
     }
+}
+.uniform-width {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
 }
 /*----------End The Basics----------*/
 
 
 /*----------The Landing----------*/
-#two {
-    height: 100%;
-    padding: 60px 50px;
-    text-align: center;
+#section-landing {
+    background: #FFFFFF;
 }
-#two h1 {
-    display: block;
-}
-#three {
-    /* padding: 75px 0 50px; */
-    padding: 0 0 50px;
-    text-align: center;
-    /* display: flex; */
-}
-#three img {
+#img-landing {
     display: block;
     width: 200px;
     height: 256px;
     box-shadow: 10px 10px #262626;
     margin:  0 0 50px 0;
 }
-#three p {
-    line-height: 1.75;
-    display: block;
-    /* margin: 0 20px; */
-    text-align: center;
-    width: 80%;
-    max-width: 800px;
-    margin: 0 auto 30px;
-}
-@media (min-width: 620px) {
-    #three img {
-        /* margin: 0 0 0 20px; */
-    }
-    #three p {
-        display: inline-block;
-        margin: 0 50px 0 50px;
-        text-align: justify;
-    }
-}
-.face-header {
-    display: flex;
-    justify-content: center;
-}
 /*----------End The Landing----------*/
 
 
 /*----------Blocks----------*/
-#four {
-    padding: 60px 50px;
-    text-align: center;
-}
-#four h1 {
+#section-blocks {
+    background: #101010;
     color: white;
-    margin:  0 20px 50px;
-    text-align: center;
 }
-#four .block {
+#section-blocks .block {
     display: inline-block;
     width: 150px;
     padding: 0 20px 50px;
@@ -140,89 +88,60 @@ p {
 
 
 /*----------Projects----------*/
-#five {
-    height: 100%;
-    padding: 60px 50px;
-    text-align: center;
-}
-#five a > div {
-    margin: 25px 20px 15px 20px;
-    width: 210px;
-    height: 350px;
-}
-#five h1 {
-    margin: 0 0 20px 0;
-    text-align: center;
+#section-projects {
+    background: #FFFFFF;
 }
 .ref {
     display: inline-block;
     width: 210px;
     height: 350px;
+    margin: 25px 20px 15px 20px;
 }
 .ref p {
-    color: white;
-    top: 50%;
     position: relative;
-    margin: 0;
-    padding: 10px 0;
     background: #101010;
+    color: white;
+    margin: 0;
+    padding: 10px;
+    top: 50%;
     transform: translateY(-50%);
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right: 10px;
-    padding-left: 10px;
 }
-/*Don't consolidate background-size for #ref. Breaks images.*/
 #ref-uw {
     background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)),  url("../_images/thumb_uw.JPG");
-    background-size: 210px 350px;
-    cursor: pointer;
 }
 #ref-digi {
     background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)),  url("../_images/thumb_di.JPG");
-    background-size: 210px 350px;
-    cursor: pointer;
 }
 #ref-vue {
     background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)),  url("../_images/thumb_at.jpg");
-    background-size: 210px 350px;
-    cursor: pointer;
 }
 #ref-dash {
     background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)),  url("../_images/thumb_dash.jpg");
-    background-size: 210px 350px;
-    cursor: pointer;
 }
 #ref-lego {
-    background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)),  url("../_images/thumb_lego.jpg");
+    background: rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05),  url("../_images/thumb_lego.jpg");
+}
+#ref-uw,
+#ref-digi ,
+#ref-vue,
+#ref-dash,
+#ref-lego {
     background-size: 210px 350px;
     cursor: pointer;
 }
-.showhide {
-    text-align: center;
-    height: 100%;
-    padding:50px 0;
+/*----------End Projects----------*/
+
+
+/*----------Show Projects----------*/
+#section-showProjects {
     background: #eee;
+}
+.showhide {
     display: none;
 }
-.showhide h1 {
-    padding-bottom: 15px;
-    margin: 0 15px 30px 15px;
-}
 .showhide img {
-    /* min-height: 190px; */
     max-height: 600px;
-    /* min-width: 300px; */
-    max-width: 70%;
-    margin: 0 15px 30px 15px;
-}
-.showhide p {
-    width: 80%;
-    max-width: 800px;
-    margin: 0 auto 30px;
-    line-height: 1.75;
+    max-width: 100%;
 }
 .showhide div {
     display: inline-block;
@@ -248,11 +167,13 @@ p {
     font-size: 50px;
     color: #48c7ff;
 }
-.img_digi {
+.img-digi {
     height: 300px;
+    margin: 0 15px 30px 15px;
 }
-.img_mobile {
+.img-mobile {
     height: 400px;
+    margin: 0 15px 30px 15px;
 }
 .word-break {
     overflow-wrap: break-word;
@@ -261,44 +182,32 @@ p {
 .fa-level-down-alt {
     margin-left: 5px;
 }
-/*----------End Projects----------*/
+/*----------End Show Projects----------*/
 
 
 /*----------Hire Me----------*/
-#six {
-    padding: 60px 50px;
-    text-align: center;
-}
-#six h1 {
+#section-hireMe {
+    background: #101010;
     color: white;
-    margin-bottom: 40px;
 }
-#six p {
-    display: block; /*makes text a block box, allowing img to be inline and centered*/
-    color: white;
-    width: 80%;
-    max-width: 800px;
-    /* margin: 0 auto 30px; */
-    line-height: 1.75;
-    margin: 0 auto 50px;
-}
-#six img {
+#section-hireMe img {
     width: 80%;
     max-width: 350px;
+    margin-top: 50px;
 }
 /*----------End Hire Me----------*/
 
 
 /*----------Video----------*/
-#seven {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 50px 20px;
-    text-align: center;
-}
-#seven h1 {
+#section-video {
+    background-size: 1500px auto;
+    background: #91ba41;
     color: #fff;
-    margin-bottom: 40px;
+}
+@media (max-height: 700px) {
+    #section-video {
+        /* padding-bottom: 20px; */
+    }
 }
 #youtube {
     position: relative;
@@ -318,14 +227,14 @@ p {
 
 
 /*----------Contact----------*/
-#eight .size {
+#section-contact {
+    text-align: center;
+    padding: 20px 0;
+}
+#section-contact .size {
     font-size: 3rem;
     color: #101010;
     padding: 0 10px 10px;
-}
-footer {
-    text-align: center;
-    padding: 20px 0;
 }
 /*----------End Contact----------*/
 
