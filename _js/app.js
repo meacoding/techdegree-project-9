@@ -4,7 +4,7 @@ $(document).ready(function(){
     
     "use strict";
     
-//    Header LEGO falling arrow----------
+    //Header LEGO falling arrow----------
     
     var animMaxCount=999;
     var animCount=0;
@@ -38,7 +38,20 @@ $(document).ready(function(){
         animCount++;
     }
     
-    // When window scrolls to van, begin animation
+    //When window scrolls to blocks, begin animation
+     $(window).on("scroll", function() {
+        let hT = $('#here').offset().top,
+            hH = $('#here').outerHeight(),
+            wH = $(window).height(),
+            wS = $(this).scrollTop();
+        if (wS > (hT+hH-wH)){
+            $('.block-bounce').delay(1000).queue(function(){
+                $('.block-bounce').addClass('animated bounce');
+            });
+        }
+     });
+
+    //When window scrolls to van, begin animation
     $(window).on("scroll", function() {
         let hT = $('#van-animation').offset().top,
             hH = $('#van-animation').outerHeight(),
@@ -50,19 +63,7 @@ $(document).ready(function(){
         }
      });
 
-     $(window).on("scroll", function() {
-        let hT = $('#here').offset().top,
-            hH = $('#here').outerHeight(),
-            wH = $(window).height(),
-            wS = $(this).scrollTop();
-        if (wS > (hT+hH-wH)){
-            $('#test').delay(500).queue(function(){
-                $('#test').addClass('animated bounce');
-            })
-        }
-     });
-
-//  Smooth scroll with anchor tags----------
+        //Smooth scroll with anchor tags----------
     
     function scrollToAnchor(aid){
         var aTag = $("a[name='"+ aid +"']");

@@ -88,6 +88,11 @@ p {
 .legoBottom .white {
     color: #101010;
 }
+.block-bounce {
+    margin-bottom: -10px;
+    position: relative;
+    z-index: 999;
+}
 /*----------End Blocks----------*/
 
 
@@ -198,6 +203,9 @@ p {
     width: 80%;
     max-width: 350px;
     margin-top: 50px;
+}
+#van-animation {
+    opacity: 0;
 }
 /*----------End Hire Me----------*/
 
@@ -428,23 +436,3 @@ p {
 } */
 /*----------End The Droppy LEGOs----------*/
 
-#van-animation {
-    opacity: 0;
-}
-/* @keyframes slidein {
-    from {
-      transform: translateX(200%);
-    }
-  
-    to {
-        transform: translateX(0%);
-    }
-  }
-.van-animation {
-    animation: 2s slidein cubic-bezier(.17,.67,.77,.87);
-  } */
-
-  #test {
-      margin-bottom: -10px;
-      z-index: 999;
-  }
