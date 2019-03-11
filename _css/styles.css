@@ -11,6 +11,10 @@ html {
 body {
     margin: 0 auto;
 }
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 h1 {
     font-family: 'Amatic SC', sans-serif;
     font-size: 4em;
@@ -423,3 +427,24 @@ p {
     }
 } */
 /*----------End The Droppy LEGOs----------*/
+
+#van-animation {
+    opacity: 0;
+}
+/* @keyframes slidein {
+    from {
+      transform: translateX(200%);
+    }
+  
+    to {
+        transform: translateX(0%);
+    }
+  }
+.van-animation {
+    animation: 2s slidein cubic-bezier(.17,.67,.77,.87);
+  } */
+
+  #test {
+      margin-bottom: -10px;
+      z-index: 999;
+  }

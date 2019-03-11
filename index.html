@@ -14,6 +14,7 @@
     <script src="_js/jquery-3.2.0.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="_css/animate.css">
     <link rel="stylesheet" type="text/css" href="_css/styles.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -44,13 +45,20 @@
                 <h1>Building Blocks</h1>
                 <div class="block">
                     <div class="lego">
-                        <div class="legoTop">
+                        <div id="test">
+                            <div class="legoTop">
                                 <div class="connector white"></div>
                                 <div class="connector white"></div>
                                 <div class="connector white"></div>
                             </div>
                             <div class="legoHeader">
                                 <span class="white"></span>
+                            </div>
+                        </div>
+                        <div class="legoTop">
+                                <div class="connector grey"></div>
+                                <div class="connector grey"></div>
+                                <div class="connector grey"></div>
                             </div>
                         <div class="legoBottom">
                             <span class="grey">HTML5</span>
@@ -61,7 +69,7 @@
                         <div class="legoBottom">
                             <span class="grey">JavaScript</span>
                         </div>
-                        <div class="legoBottom">
+                        <div class="legoBottom" id="here">
                             <span class="green">SASS</span>
                         </div>
                     </div>
@@ -338,7 +346,7 @@
                     spoken languages are bit different than developer languages. Hey, whatever works. 
                     As long as there’s <em>caife</em>.
                 </p>
-                <img src="_images/van.png" alt="">
+                <img id="van-animation" src="_images/van.png" alt="">
             </div>
         </section>
         <section id="section-video" class="uniform-layout"> 

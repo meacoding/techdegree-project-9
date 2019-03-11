@@ -38,6 +38,30 @@ $(document).ready(function(){
         animCount++;
     }
     
+    // When window scrolls to van, begin animation
+    $(window).on("scroll", function() {
+        let hT = $('#van-animation').offset().top,
+            hH = $('#van-animation').outerHeight(),
+            wH = $(window).height(),
+            wS = $(this).scrollTop();
+        if (wS > (hT+hH-wH)){
+            $('#van-animation').css('opacity', '100').addClass('animated fadeInRight');
+            $(window).off("scroll");
+        }
+     });
+
+     $(window).on("scroll", function() {
+        let hT = $('#here').offset().top,
+            hH = $('#here').outerHeight(),
+            wH = $(window).height(),
+            wS = $(this).scrollTop();
+        if (wS > (hT+hH-wH)){
+            $('#test').delay(500).queue(function(){
+                $('#test').addClass('animated bounce');
+            })
+        }
+     });
+
 //  Smooth scroll with anchor tags----------
     
     function scrollToAnchor(aid){
@@ -189,4 +213,5 @@ $(document).ready(function(){
     // });
 
 
+    
 });
