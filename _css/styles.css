@@ -149,7 +149,7 @@ p {
     display: none;
 }
 .showhide img {
-    max-height: 600px;
+    /* max-height: 600px; */
     max-width: 100%;
 }
 .showhide div {
@@ -183,6 +183,11 @@ p {
 .img-mobile {
     height: 400px;
     margin: 0 15px 30px 15px;
+}
+.img-mockup {
+    width: 100%;
+    margin: 0 0 30px 0;
+    max-width: 600px;
 }
 .word-break {
     overflow-wrap: break-word;
