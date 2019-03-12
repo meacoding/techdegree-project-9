@@ -176,6 +176,19 @@ p {
     font-size: 50px;
     color: #48c7ff;
 }
+.word-break {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+.fa-level-down-alt {
+    margin-left: 5px;
+}
+.img-large {
+    width: 100%;
+    margin: 0 0 30px 0;
+    max-width: 600px;
+    border: 1px solid #101010;
+}
 .img-digi {
     height: 300px;
     margin: 0 15px 30px 15px;
@@ -183,18 +196,6 @@ p {
 .img-mobile {
     height: 400px;
     margin: 0 15px 30px 15px;
-}
-.img-mockup {
-    width: 100%;
-    margin: 0 0 30px 0;
-    max-width: 600px;
-}
-.word-break {
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-}
-.fa-level-down-alt {
-    margin-left: 5px;
 }
 /*----------End Show Projects----------*/
 
