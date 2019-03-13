@@ -213,6 +213,8 @@ $(document).ready(function(){
     //     $('#show-dash:visible').slideToggle('slow');
     // });
 
-
+    $('form').click(function(){
+        $('#form').addClass('formHeightAfterSubmission');
+    });
     
 });

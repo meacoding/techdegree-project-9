@@ -246,13 +246,30 @@ p {
 
 /*----------Contact----------*/
 #section-contact {
-    text-align: center;
-    padding: 20px 0;
+    /* text-align: center; */
+    /* padding: 20px 0; */
 }
-#section-contact .size {
+.size {
     font-size: 3rem;
-    color: #101010;
+    color: #ffffff;
     padding: 0 10px 10px;
+}
+#form {
+    position: relative;
+    /* padding-top: 56.25%; */
+    overflow: hidden;
+    height: 753px;
+}
+#form iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+.formHeightAfterSubmission {
+    height: 240px !important;
 }
 /*----------End Contact----------*/
 
