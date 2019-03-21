@@ -459,3 +459,47 @@ p {
 } */
 /*----------End The Droppy LEGOs----------*/
 
+.employee {
+    display: flex;
+    background-color: #fff;
+    /* padding: 0 26px; */
+    align-items: center;
+    width: 300px;
+}
+.employee a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.employee-img {
+    width: 50px;
+    min-width: 50px;
+    height: 54.5px;
+}
+.employee-info {
+    margin-left: 23px;
+}
+.employee-info h2 {
+    color: #404A51;
+    line-height: 1;
+    margin: 0;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.employee-info p {
+    color: #94999D;
+    margin: 10px 0 0 0;
+    font-size: 16px;
+    line-height: 1;
+    text-align: left;
+}
+.city,
+.address {
+    text-transform: capitalize;
+} 
+.employee-info .employee-img {
+    width: 172px;
+    min-width: 172px;
+    height: 172px;
+}
