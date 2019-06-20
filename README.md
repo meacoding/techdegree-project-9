@@ -20,7 +20,7 @@ To build a real portfolio with actual projects I've made using any and all techn
 
 The Treehouse course data was imported with `$.getJSON()`. In "View Projects", the projects are revealed and animated with jQuery and CSS. In "Building Blocks", the white top hat blocks are animated with Animate.css. 
 
-The scroll down "arrow" blocks I used to have in `id="section-landing"` was animated with jQuery which still exists in styles.css under the comment heading `The Droppy LEGOs`, in app.js under the comment heading `Header LEGO falling arrow` and at the bottom of the index.html where it was moved and commented out.
+The scroll down "arrow" blocks I used to have in `id="section-landing"` was animated with jQuery which still exists in styles.css under the comment heading "The Droppy LEGOs", in app.js under the comment heading "Header LEGO falling arrow" and at the bottom of the index.html where it was moved and commented out.
  
 ## Backstory
 
