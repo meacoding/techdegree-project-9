@@ -24,11 +24,11 @@ The scroll down "arrow" blocks I used to have in `id="section-landing"` was anim
  
 ## Backstory
 
-This is the final project. I started in a comfortable place with a one page website. As evidenced by the unfinished styling and large amounts of commented-out code, I scrapped this project.
+This is the final project. I started in a comfortable place with a one page website. As evidenced by the unfinished styling and large amounts of commented out code, I scrapped this project.
 
-No matter what I did to improve it, I just didn't like it. I had no design or master plan. I figured I'd discover what I'd want along the way. Funny enough that is exactly what happened when I stopped wasting my time on this and started a new one, which you can find here. That one ultimately became my portfolio and the one I submitted for review.
+No matter what I did to improve it, I just didn't like it. I had no design or master plan. I figured I'd discover what I'd want along the way. Funny enough that is exactly what happened when I stopped wasting my time on this and started a new one, which you can find [here](https://github.com/meacoding/techdegree-project-9b). That one ultimately became my [portfolio](http://amandaharness.com/) and the one I submitted for review.
 
-Why did I scrap it? I didn't know what to do with the mini-profile for myself, which is at the very top of the page. The "Building Blocks" listing my known technologies is okay although the animation is feels unnecessary. I wasn't sure how to display my projects. I knew I wanted a contact form at the bottom. I really like the Google form but it isn't modifiable and it's bulky. I originally wanted a video introduction of myself but currently it's out of date and it just seems weird and out of place.
+Why did I scrap it? I didn't know what to do with the mini-profile for myself, which is at the very top of the page. The "Building Blocks" listing my known technologies is okay although the animation feels strange. I wasn't sure how to display my projects under "View Projects." I knew I wanted a contact form at the bottom. I really like the Google form but it isn't modifiable and it's bulky. I originally wanted a video introduction of myself but currently it's out of date and it just seems weird and out of place. But you know what, it was a good learning experience. My final portfolio turned out great.
 
 ## License
 None.
